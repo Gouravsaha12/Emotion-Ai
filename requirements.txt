@@ -1,6 +1,6 @@
 langchain_openai
 langchain_core
-langchain
+langchain==0.1.19
 langchain_community
 streamlit
 streamlit_option_menu
