@@ -1,10 +1,10 @@
 # Load api keys (using environment variables)
 from dotenv import load_dotenv
 load_dotenv()
-import asyncio
-import time
 
 # Main imports
+import asyncio
+import time
 from langchain_openai import ChatOpenAI  # Interact with OpenAI API
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder  # Build chat prompts
 from langchain.agents import create_openai_functions_agent, AgentExecutor  # Create chat agents
