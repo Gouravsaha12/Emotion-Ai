@@ -18,7 +18,7 @@ from streamlit_option_menu import option_menu  # Sidebar menu for options
 UPSTASH_URL = "https://endless-cub-49409.upstash.io"
 UPSTASH_REDIS_REST_TOKEN = "AcEBAAIncDFmMWNhZTc4MmVmYWI0OTMxYjk0Y2JhZDU4ZTgxNGUzOHAxNDk0MDk"
 
-# Long memory (uses Upstash redis for conversation history, commented out)
+# Long memory (uses Upstash redis for conversation history)
 def long_memory(db_name):
     history = UpstashRedisChatMessageHistory(
         url=UPSTASH_URL,
@@ -59,7 +59,7 @@ def create_agentExecutor(msg, db_name):
         memory = ConversationBufferMemory(
             memory_key="chat_history",
             return_messages=True,
-            chat_memory=long_memory(db_name)  # Conversation history (commented out)
+            chat_memory=long_memory(db_name)  # Conversation history
         )
 
         agentExecutor = AgentExecutor(
