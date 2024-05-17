@@ -15,8 +15,8 @@ from langchain_community.chat_message_histories.upstash_redis import UpstashRedi
 import streamlit as st  # Streamlit web framework
 from streamlit_option_menu import option_menu  # Sidebar menu for options
 
-UPSTASH_URL = "https://endless-cub-49409.upstash.io"
-UPSTASH_REDIS_REST_TOKEN = "AcEBAAIncDFmMWNhZTc4MmVmYWI0OTMxYjk0Y2JhZDU4ZTgxNGUzOHAxNDk0MDk"
+UPSTASH_URL = "your-upstash-url"
+UPSTASH_REDIS_REST_TOKEN = "your-upstash-token"
 
 # Long memory (uses Upstash redis for conversation history)
 def long_memory(db_name):
