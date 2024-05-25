@@ -1,5 +1,5 @@
 # Emotion-Ai
-# Run with - streamlit run app.py
+# streamlit run app.py
 # Angry
 ![Screenshot 2024-05-25 154747](https://github.com/Gouravsaha12/Emotion-ai/assets/119443395/18853829-0be1-4c26-b413-41b8d7a0ddc9)
 # Happy
